@@ -1,0 +1,112 @@
+{
+	"variables": [],
+	"info": {
+		"name": "gateway",
+		"_postman_id": "aa4f158f-01ca-7434-5ae5-6b4c277c571e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/login",
+			"request": {
+				"url": "localhost:8080/login",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YmlkZXNpOnBhc3N3b3Jk",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "bidesi",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/resource",
+			"request": {
+				"url": "localhost:8080/api/audio/v1/songs",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AUTH-TOKEN",
+						"value": "843dd193-c12b-4984-85ba-6fd036db78d6",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "0dd29a85-f366-4871-96e1-218cac83732b",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "843dd193-c12b-4984-85ba-6fd036dwb78d6",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/audio/v1/songs",
+			"request": {
+				"url": "localhost:8080/api/audio/v1/songs",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "843dd193-c12b-4984-85ba-6fd036db78d6",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/resource/logout",
+			"request": {
+				"url": "http://localhost:8080/resource/logout",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "58f9ec12-e3dd-4cc6-9fbf-5edcc7ab63c2",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
